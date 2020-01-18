@@ -1,0 +1,45 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Exo+2:800&display=swap" rel="stylesheet">
+<style>
+body {
+      font-family: 'Exo 2', sans-serif
+        }
+</style>
+<style media="screen">
+  .platform_raise {
+
+    box-shadow:7px 7px 9px rgba(0,0,0,0.15), -7px -7px 9px rgba(255,255,255,0.65);
+    border-radius: 7px
+
+    }
+</style>
+<style media="screen">
+  .text_raise {
+    color:#eee;
+    text-shadow:7px 7px 9px rgba(0,0,0,0.15), -7px -7px 9px rgba(255,255,255,0.65);
+    border-radius: 7px
+
+    }
+</style>
+
+</head>
+<body class='h-100' style="background-color:#eee">
+<div class="container h-100 d-flex justify-content-center">
+    <div class="my-auto text-center">
+      <!-- <div class=" display-1 text_raise">------</div>
+      <h1 class="display-1 text_raise">FUCK YOU</h1>
+      <div class=" display-1 text_raise">------</div> -->
+      <h1 class="display-1 text_raise" id='mtext'></h1>
+    </div>
+ </div>
+ <script type="text/javascript">
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+document.getElementById("mtext").innerHTML=getUrlParameter('text');
+ </script>
+ </body>
